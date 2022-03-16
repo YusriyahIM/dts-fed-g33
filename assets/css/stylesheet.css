@@ -41,6 +41,7 @@ html {
 .nav-links li {
   margin: 0 30px;
   text-decoration: none;
+  color: white;
 }
 
 header {
