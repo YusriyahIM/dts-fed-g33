@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -26,15 +27,23 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 20px;
   color: black;
   cursor: pointer;
 }
 .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -50,8 +59,14 @@ header {
   background-image: url("../img/pancake.jpg");
   background-position: bottom;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   opacity: 0.8;
 }
@@ -84,6 +99,7 @@ header {
   color: black;
   background-color: paleturquoise;
   cursor: pointer;
+  -webkit-box-shadow: 0 7px darkcyan;
   box-shadow: 0 7px darkcyan;
   border-radius: 30px;
   text-align: center;
@@ -92,6 +108,7 @@ header {
 .ctn:active {
   position: relative;
   top: 7px;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .ctn:hover {
@@ -100,10 +117,31 @@ header {
 
 /*Animations */
 .animation {
+  -webkit-animation-name: animasi;
   animation-name: animasi;
+  -webkit-animation-duration: 5s;
   animation-duration: 5s;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+@-webkit-keyframes animasi {
+  0% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: palegreen;
+  }
+  50% {
+    background-color: aqua;
+  }
+  75% {
+    background-color: plum;
+  }
+  100% {
+    background-color: white;
+  }
 }
 @keyframes animasi {
   0% {
@@ -123,9 +161,15 @@ header {
   }
 }
 .foodmenu img {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .foodmenu img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -194,7 +238,11 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   opacity: 0.8;
 }
@@ -207,8 +255,15 @@ p {
   color: white;
   font-size: 7vh;
   margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .about-content h2 {
@@ -300,6 +355,26 @@ p {
   opacity: 1;
 }
 
+.contact-area .contact-form-wrapper form input::-webkit-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-moz-placeholder,
+.contact-area .contact-form-wrapper form textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input:-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.contact-area .contact-form-wrapper form input::-ms-input-placeholder,
+.contact-area .contact-form-wrapper form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
 .contact-area .contact-form-wrapper form input::placeholder,
 .contact-area .contact-form-wrapper form textarea::placeholder {
   opacity: 1;
@@ -326,12 +401,33 @@ textarea {
   -webkit-box-shadow: 0px 0px 51px rgba(180, 180, 180, 0.16);
   box-shadow: 0px 0px 51px rgba(180, 180, 180, 0.16);
   -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   border: 1px solid transparent;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
 }
 
@@ -372,6 +468,7 @@ textarea:focus {
 
 /*------- FOOTER -------*/
 footer {
+  display: -ms-inline-grid;
   display: inline-grid;
   bottom: 0;
   left: 0;
@@ -384,8 +481,15 @@ footer {
   color: #fff;
 }
 .footer-content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
 }
@@ -404,8 +508,14 @@ footer {
 }
 .socials {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
@@ -423,6 +533,10 @@ footer {
 .socials a i {
   font-size: 1.1rem;
   width: 20px;
+
+  -webkit-transition: color 0.4s ease;
+
+  -o-transition: color 0.4s ease;
 
   transition: color 0.4s ease;
 }
@@ -454,6 +568,8 @@ footer {
 
 @media (max-width: 500px) {
   .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
     margin-bottom: 20px;
