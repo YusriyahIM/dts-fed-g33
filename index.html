@@ -7,29 +7,29 @@
     <title>Restaurant 33</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
+
   <body>
     <header>
       <nav class="navbar">
-        <h1 class="logo">33</h1>
+        <img src="assets/img/Logo.png" class="logo" />
         <ul class="nav-links">
           <li class="active"><a href="#"></a>Home</li>
-          <li class="active"><a href="#"></a>About</li>
           <li class="active"><a href="#"></a>Menu</li>
+          <li class="active"><a href="#about"></a>About</li>
           <li class="active"><a href="#"></a>Location</li>
-          <li class="active"><a href="#"></a>Contact</li>
+          <li class="active"><a href="#contact"></a>Contact</li>
         </ul>
         <img src="assets/img/navbar.png" alt="" class="menu-btn" />
       </nav>
-
       <div class="header-content">
         <h2>Explore The Taste</h2>
         <div class="line"></div>
         <h1>Restaurant 33</h1>
-        <a href="#" class="ctn">Know More</a>
+        <a href="#" class="ctn animation">Know More</a>
       </div>
     </header>
-
     <script>
       const menuBtn = document.querySelector(".menu-btn");
       const navlinks = document.querySelector(".nav-links");
@@ -39,39 +39,132 @@
       });
     </script>
 
-    <section class="foodmenu">
-      <div class="title">
-        <h1>Most Favourite Menu</h1>
-        <div class="line"></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/cakes.jpg" alt="" />
-          <h4>Strawberry Cake</h4>
-          <p>The sweet taste of strawberry cake is topped with melted chocolate which adds to the mix of flavors.</p>
-          <a href="#" class="ctn">Order Here</a>
+    <main>
+      <section class="foodmenu">
+        <div class="title">
+          <h1>Most Favourite Menu</h1>
+          <div class="line"></div>
         </div>
-        <div class="col">
-          <img src="assets/img/sandwichs.jpg" alt="" />
-          <h4>Beef Sandwich</h4>
-          <p>Sandwiches filled with grilled beef and topped with cheese for a more delicious blend of flavors.</p>
-          <a href="#" class="ctn">Order Here</a>
+        <div class="row">
+          <div class="col">
+            <img src="assets/img/cakes.jpg" alt="" />
+            <h4>Strawberry Cake</h4>
+            <p>The sweet taste of strawberry cake is topped with melted chocolate which adds to the mix of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/sandwichs.jpg" alt="" />
+            <h4>Beef Sandwich</h4>
+            <p>Sandwiches filled with grilled beef and topped with cheese for a more delicious blend of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/cakes.jpg" alt="" />
+            <h4>Strawberry Cake</h4>
+            <p>The sweet taste of strawberry cake is topped with melted chocolate which adds to the mix of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/sandwichs.jpg" alt="" />
+            <h4>Beef Sandwich</h4>
+            <p>Sandwiches filled with grilled beef and topped with cheese for a more delicious blend of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/cakes.jpg" alt="" />
+            <h4>Strawberry Cake</h4>
+            <p>The sweet taste of strawberry cake is topped with melted chocolate which adds to the mix of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/sandwichs.jpg" alt="" />
+            <h4>Beef Sandwich</h4>
+            <p>Sandwiches filled with grilled beef and topped with cheese for a more delicious blend of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/cakes.jpg" alt="" />
+            <h4>Strawberry Cake</h4>
+            <p>The sweet taste of strawberry cake is topped with melted chocolate which adds to the mix of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
+          <div class="col">
+            <img src="assets/img/sandwichs.jpg" alt="" />
+            <h4>Beef Sandwich</h4>
+            <p>Sandwiches filled with grilled beef and topped with cheese for a more delicious blend of flavors.</p>
+            <a href="#" class="ctn animation">Order Here</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <main class="about">
-      <div class="about-content">
-        <h1>The Best Restaurant in Town</h1>
-        <div class="line"></div>
-        <h2>A top modern restaurant that provides a variety of menus and serves delicious food. Customer's comfort and satisfaction is our priority.</h2>
-      </div>
+      <section id="about" class="about">
+        <div class="about-content">
+          <h1>The Best Restaurant in Town</h1>
+          <div class="line"></div>
+          <h2>A top modern restaurant that provides a variety of menus and serves delicious food. Customer's comfort and satisfaction is our priority.</h2>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-area">
+        <div class="map-bg">
+          <img src="assets/img/map-bg.svg" alt="" />
+        </div>
+        <div class="container">
+          <div class="section-title">
+            <h2>Get In Touch</h2>
+          </div>
+          <div class="contact-form-wrapper">
+            <form action="" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" placeholder="Nama" name="name" id="name" />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" placeholder="Email" name="email" id="email" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" placeholder="Subjek" name="subject" id="subject" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <textarea name="message" id="message" rows="4" placeholder="Pesan"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="text-right col-12">
+                  <button class="ctn animation" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="footer-content">
-        <p>Kertajaya Street,Surabaya,Indonesia | Phone: 081288879669 | Email: restaurant33@gmail.com</p>
-        <p>Copyright © 2022 / Restaurant 33</p>
+        <h3>Restaurant 33</h3>
+        <p>Kertajaya Street,Surabaya,Indonesia</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="call:081288879669"><i class="fa fa-phone"></i></a>
+          </li>
+          <li>
+            <a href="mailto:restaurant33@gmail.com"><i class="fa fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; <a href="#" style="text-decoration: none">Restaurant 33</a></p>
       </div>
     </footer>
   </body>
